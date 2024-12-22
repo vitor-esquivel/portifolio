@@ -21,12 +21,17 @@ time, mark, audio, video {
  padding:0;
  border:0;
  outline:0;
+ font-size: 62.5%;
  font-size:100%;
  vertical-align:baseline;
  background:transparent;
 }
 body {
  line-height:1;
+ background-image: url(../img/fundo.jpg);
+ background-repeat: repeat;
+ background-color: rgb(255, 255, 255);
+ text-align: center;
 }
 article,aside,details,figcaption,figure,
 footer,header,hgroup,menu,nav,section { 
