@@ -6,22 +6,25 @@ html{
 
 body {
     overflow: hidden;
+    align-items: center;
+    justify-content: center;
 }
 
 .container {
-    
-    width: 100%;
+    background-color: white;
+    width: 100vw;
     display: flex;
+    float: right;
 }
 
 .imagem {
     width: 50vw;
-    height: 100vh;
+    height: 80vh;
 }
 
 .imagem img {
     width: 100%;
-    height: 90%;
+    height: 100%;
 }
 
 .conteudo {
@@ -29,8 +32,8 @@ body {
 }
 
 header {
-    background-color: #ffffff;
-    width: 130vw;
+    background-color: gray;
+    width: 100%;
     height: 9vh;
     display: flex;
 }
@@ -53,6 +56,7 @@ ul {
 }
 
 ul li {
+    color: #ffffff;
     font-size: 1.8rem;
     margin: 10px 20px ;
     
@@ -72,35 +76,65 @@ p {
 a {
     text-decoration: none;
     list-style-type: none;
-    color: black;
+    color: white;
+}
+
+.footer {
+    background-color: gray;
+    width: 100%;
+    height: 11vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+.footer p {
+    color: #ffffff;
+    font-size: 1.6rem;
 }
 
 @media (max-width: 768px) {
     body {
         overflow: scroll;
     }
+    header {
+        background-color: gray;
+        width: 130%;
+        height: 9vh;
+        display: flex;
+    }
     .container{
       margin: 0px;
-      width: 100vw;
-      height: 100vh;
+      width: 120vw;
+      height: 110vh;
+      display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       overflow: hidden;
     }
+    
 
     #imagem-01{
         
         background-color: #ffffff;
-        width: 50%;
-        height: 10%;
+        width: 30%;
+        height: 5%;
     }
     #imagem-01 img {
         
         background-color: #ffffff;
-        width: 50%;
-        height: 10%;
+        width: 30%;
+        height: 5%;
     }
+
+    .footer {
+        background-color: gray;
+        width: 130%;
+        height: 11vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    } 
     ul li {
         font-size: 1rem;
         margin: 10px 10px ;
