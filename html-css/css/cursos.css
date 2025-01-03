@@ -5,41 +5,12 @@ html{
     overflow: hidden;
 }
 
-body {
-    overflow: hidden;
-    align-items: center;
-    justify-content: center;
+.main-contaier{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ overflow: hidden;
 }
-
-.container {
-    
-    width: 100vw;
-    display: flex;
-   
-}
-
-.imagem {
-    
-    width: 50vw;
-    height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-.imagem img {
-    background-color: #1c271a80;
-    max-width: 100%;
-    height: auto;
-    border-radius: 20px;
-    border: 1px solid;
-    margin: 10px;
-}
-
-
-
-
 
 .menu {
     width: 100vw;
@@ -47,8 +18,15 @@ body {
     
 }
 
-.menu li {
+.menu ul {
+    display: flex;
+    justify-content: center;
     
+    
+}
+    
+p {
+    font-size: 1.6rem;
 }
 
 
@@ -60,9 +38,30 @@ ul {
     
 }
 
+.container {
+    display: flex;
+   
+    flex-direction: column;
+}
 
+.conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 65vh;
+   
 
+}
 
+.c1 {
+    width: 50vw;
+}
+
+.c2 {
+    width: 50vw;
+}
 
 @media (max-width: 768px) {
     html {
@@ -80,21 +79,11 @@ ul {
       
     }
     
+    p {
+        font-size: 1.3rem;
+    }
 
-    .imagem{
-        
-        
-        width: 50vw;
-        height: auto;
-        
-        
-    }
-    .imagem img {
-        
-        
-        width: 100vw;
-        height: auto;
-    }
+  
 
     .conteudo {
         max-width: 100%;
@@ -103,6 +92,5 @@ ul {
    
    
   }
-
 
 
