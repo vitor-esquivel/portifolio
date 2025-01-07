@@ -49,19 +49,24 @@ ul {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    width: 100%;
+    width: 100vw;
     height: 65vh;
    
+    & .c1 {
+        width: 50vw;
+        height: 50vh;
+    }
 
+    & .c2 {
+        width: 50vw;
+        height: 50vh;
+    }
+   
 }
 
-.c1 {
-    width: 50vw;
-}
 
-.c2 {
-    width: 50vw;
-}
+
+
 
 @media (max-width: 768px) {
     html {
@@ -76,7 +81,15 @@ ul {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      
+      & .c1 {
+        width: 50vw;
+        height: auto;
+    }
+
+    & .c2 {
+        width: 50vw;
+        height: auto;
+    }
     }
     
     p {

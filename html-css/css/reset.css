@@ -96,7 +96,7 @@ li {
     margin: 0px 30px;
     width: 10vw;
     border-radius: 10px;
-    transition: 0.2s;
+    transition: 0.5s;
 }
 
 ul li:hover {

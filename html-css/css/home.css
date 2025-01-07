@@ -47,7 +47,7 @@ html{
   #imagem-01 img {
     margin-top: 20px;
     border: 1px solid black;
-    background-color: #ffffff;
+    background-color: #0000006b;
     width: 400px;
     height: 400px;
     overflow: hidden;
@@ -89,15 +89,15 @@ html{
  
 
   #table  {
-    
-    border-top: 10px;
+    background-color: rgba(0, 0, 0, 0.226);
     width: 28vw;
-    height: 60vh;
-    background-color: rgb(255, 255, 255);
+    height: 65vh;
     display: flex;
     justify-content: center;
+    align-items: center;
     box-sizing: border-box;
     border-radius: 5px;
+    border: 1px solid;
     
     
   }
@@ -111,10 +111,9 @@ html{
   }
 
   .h1, p, li {
-    
+    background-color: rgba(0, 0, 0, 0.486);
     font-family: Arial, Helvetica, sans-serif;
-    color: #000000;
-    border: 1px solid rgb(0, 0, 0);
+   
     list-style-type: none;
     width: 18vw;
     margin: 20px auto;
@@ -124,13 +123,13 @@ html{
   
   }
   h1, p, li:hover {
-    background-color: hsla(0, 0%, 0%, 0.432);
+    background-color: hsla(0, 0%, 0%, 0.856);
   }
   
 
   a{
       font-size: 1.2rem;
-      color: rgb(84, 47, 185);
+      color: rgb(255, 255, 255);
       text-decoration: none;
   }
   
@@ -214,8 +213,7 @@ html{
     #imagem-01 img {
       margin-top: 20px;
       margin-left: 40px;
-      border: 1px solid black;
-      background-color: #ffffff;
+     
       width: 200px;
       height: 200px;
       overflow: hidden;
@@ -223,11 +221,6 @@ html{
       
       }
     h1, p, li {
-    
-      font-family: Arial, Helvetica, sans-serif;
-      color: #000000;
-      border: 1px solid rgb(0, 0, 0);
-      list-style-type: none;
       width: 70%;
       margin: 10px auto;
       padding: 15px;
