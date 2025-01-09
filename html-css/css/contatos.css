@@ -33,7 +33,7 @@ html{
 .table {
     background-color: rgba(0, 0, 0, 0.226);
     border: 1px solid;
-    width: 30vw;
+    width: 550px;
     height: 60vh;
     display: flex;
     justify-content: center;
@@ -62,3 +62,26 @@ html{
     }
 }
 
+@media (max-width: 768px) {
+
+    .table {
+        
+        width: 80vw;
+        height: 350px;
+       
+    
+        & img{
+            width: 30px;
+    
+        }
+    
+        & li {
+            
+            width: 200px;
+            
+            
+            
+            
+        }
+    }
+}
