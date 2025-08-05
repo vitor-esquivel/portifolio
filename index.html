@@ -5,227 +5,283 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bootstrap/bootstrap-5.3.3-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="custom.css">
-    <title>Document</title>
+    <title>Nilma Carla - Professora de Educação Física</title>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="row bs-dark">
-               
-
-                <div id="menu" class="col col-md-10 col-sm-12">
-                    <ul class="nav justify-content-center "> 
-                        <li class="nav-item "><a class="nav-link active text-light" href="">Home</a></li>
-                        <li class="nav-item"><a class="nav-link text-light" href="#sobre">Sobre</a></li>
-                        <li class="nav-item"><a class="nav-link text-light" href="#Formacao">Formação</a></li>
-                        <li class="nav-item"><a class="nav-link text-light" href="#Experiencia">Experiencia</a></li>
-                        <li class="nav-item"><a class="nav-link text-light" href="#cursos">Cursos</a></li>
-                        <li class="nav-item"><a class="nav-link text-light" href="#contato">Contato</a></li>
-  
-                     </ul>
-                     
-                </div>
-
-                <div class="col col-md-2 col-sm-12">
-                    <ul class="nav justify-content-end">
+    <!-- Navigation Header -->
+    <header class="fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="#home">Nilma Carla</a>
+                
+                <!-- Mobile Menu Toggle -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <!-- Navigation Menu -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <button class="btn btn-info mx-1"><i class="fab fa-linkedin"></i></button>
+                            <a class="nav-link active" href="#home">Home</a>
                         </li>
-                        <li class="nav-item"> 
-                            <button class="btn btn-success mx-2"><i class="fab fa-whatsapp"></i><a href=""></a></button>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sobre">Sobre</a>
                         </li>
-                        <li class="nav-item" >
-                            <button class="btn btn-danger mx-1" ><a href="https://www.instagram.com/nilma.carla/"><i class="fab fa-instagram"></i></a></button>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#formacao">Formação</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#experiencia">Experiência</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#cursos">Cursos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contato">Contato</a>
                         </li>
                     </ul>
-                </div>
-            </div>
-        </div>
-    </header>
-    <div class="container">
-        
-        
-        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="ratio ratio-21x9">
-                    <img src="assets/experiencia4.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-caption">
-                    <h5>Lorem ipsum dolor</h5>
                     
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="ratio ratio-21x9">
-                    <img src="assets/experiencia2.jpg" class="d-block w-100" alt="...">
-
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="ratio ratio-21x9">
-                    <img src="assets/experiencia5.jpg" class="d-block w-100" alt="...">
-                </div>
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-    </div>
-
-    <section id="sobre">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-7 col-sm-12">
-                    <h2>Sobre</h2>
-                    <p>Nilma Carla dos Santos Pereira, com 24, minha jornada na Educação física começou em 2019, impulsionada pela paixão pela capoeira.  A dança,  o movimento e a rica cultura que envolvem essa arte marcial me inspiram a buscar conhecimento e a transformar essa paixão  em minha profissão.
-                    </p>
-                    <p><p> A educação física se tornou para mim uma ferramenta poderosa para o desenvolvimento pessoal e profissional, tanto meu quanto dos meus alunos
-                    </p>
-                    
-    
-
-                    </p>
-                   
-                    
-                </div>
-
-                <div class="col-md-5 col-sm12 ">
-                    <img src="assets/formatura.jpg" class="w-100">
-                </div>
-           
-            
-            </div>
-        </div>
-    </section>
-               
-    <section id="Formacao">
-        <div class="container p-0">
-
-            <div class="row">
-                <div class="col col-md-5 col-sm-12">
-                    <img src="assets/formatura-2.jpg" class="w-100">
-                </div>
-                <div class="col">
-                    <div class="row  col-sm-12">
-                        <h2>Formação</h2>
+                    <!-- Social Media Links -->
+                    <div class="d-flex">
+                        <a href="#" class="btn btn-outline-info btn-sm me-2" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-success btn-sm me-2" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://www.instagram.com/nilma.carla/" class="btn btn-outline-danger btn-sm" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
                     </div>
-                    
-                    <p>Possuo dupla graduação em Educação Física (Licenciatura e Bacharelado), concluída em 2023 e 2024. Com experiência desde 2019, atuo como professora de Capoeira e Ballet. Ao longo da minha trajetória, participei de estágios e cursos para aprimorar minhas habilidades e conhecimentos</p>
-                   
-                    
-                  
-               
                 </div>
             </div>
-        </div>
-    </section>
+        </nav>
+    </header>
 
-    <section id="Experiencia">
-        <div class="container">
-            <div class="row">
-               <div class="col col-md-12  d-flex justify-content-center">
-                <h2>Experiência</h2>
-               </div> 
-            </div>
-            <div class="row">
-                <div class="col col-md-6  col-sm-12">
-                    <ul>
-                        <li><h5>Preofessora de Educação Física nas escolas:</h5></li>
-                        <li><p>Educandário Novo Ensino Creche Escola Girassol Escola Passos Firmes</p></li>
-                        <li><h5>Professora de Capoeira nas escolas:</h5></li>
-                        <li><p>Escola Concept Escola Luz do Saber Escola Cantinho do Guri Escola Interlúdica Colégio Estilo Escola</p></li>
-                        <li><p>Passos Para o Futuro Escola Raio de Sol Escola Terra Prometida Escola 1° Conquista Colégio Fischer</p></li>
-                        <li><p>Escola Proteção à Juventude Escola Gamaliel</p></li>
-                    </ul>
-                </div>
-                <div class="col col-md-6  col-sm-12">
-                    <ul>
-                        <li><h5>Professora da Ballet nas escolas:</h5></li>
-                        <li><p>Escola Estrela da Manhã Escola Passos Firmes</p></li>
-                        <li><h5>Professora voluntária de Capoeira nas escolas:</h5></li>
-                        <li><p>Escola Municipal Professora Elisa Saldanha Escola Municipal da Fazenda Grande II Ministro Carlos Santana</p></li>
-                    </ul>
-                </div>
-            </div>
-            <div id="imgx" class="row">
-                <div class="col col-md-6 col-sm-12"><img src="assets/experiencia5.jpg" ></div>
-                
-                <div class="col col-md-6  col-sm-12"><img src="assets/303b0371-7589-47a4-8a6d-0423a69cd808.jpg"  ></div>
-            </div>
-
-        </div>
-    </section>
-    <section id="cursos" >
-        <div class="container">
-            <div class="row">
-                <div class="col col-md-12  d-flex justify-content-center">
-                 <h2>cursos</h2>
-                </div> 
-             </div>
-             <div class="row">
-                 <div class="col col-md-6 col-sm-12">
-                     <ul>
-                        
-                         <li><p>Curso: Psicomotricidade Instituição: Meritorium Escola Digital Carga horária: 80h</p></li>
-                         
-                         <li><p>Curso: Psicomotricidade, jogos e recreação Instituição: ESAB - 2020 Carga horária: 40h</p></li>
-                         <li><p>Curso: Educação, Aprendizagem e Desenvolvimento Instituição: ESAB - 2020 Carga horária: 40h</p></li>
-                        
-                     </ul>
-                 </div>
-                 <div class="col col-md-6 col-sm-12">
-                     <ul>
-                         <li><p>Pressupostos Bio-psico-sociais da Educação Infantil, Instituição: ESAB - 2020 Carga horária: 40h</p></li>
-                         <li><p>Práticas Educativas de Sustentabilidade Instituição: ESAB - 2020 Carga horária: 40h</p></li>
-                         
-                         <li><p>Atividade Física, Saúde e Câncer Carga horária: 5h Instituição: UNIME</p></li>
-                     </ul>
-                 </div>
-             </div>
-        </div>
-    </section>
-
-    <section id="contato">
-        <div class="container ">
-            <div class="row">
-                <div class="col-md-6 col-sm-12">
-                    <h2>Contato</h2>
-                    <p>Ficou interessado? Segue algumas opções de contato.</p>
-                </div>
-                <div class="col-md-6 col-sm-12">
-                    <form>
-                
-                    
-                        <div class="form-group">
-                            <div class="d-flex justify-content-end">
-                                <button class="btn btn-info mx-2"><i class="fab fa-linkedin"></i></button>
-                                <button class="btn btn-danger mx-2"><i class="fab fa-instagram"></i></button>
-                                <button class="btn btn-dark mx-2"><i class="fas fa-envelope"></i></button>
-                                <button class="btn btn-success mx-2"><i class="fab fa-whatsapp"></i></button>
+    <!-- Hero Section with Carousel -->
+    <section id="home" class="hero-section">
+        <div class="container-fluid px-0">
+            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="carousel-image-wrapper">
+                            <img src="assets/experiencia4.jpg" class="d-block w-100" alt="Nilma Carla ensinando">
+                        </div>
+                        <div class="carousel-caption d-flex align-items-center justify-content-center">
+                            <div class="text-center">
+                                <h1 class="display-4 fw-bold mb-3">Nilma Carla</h1>
+                                <p class="lead">Professora de Educação Física, Capoeira e Ballet</p>
                             </div>
                         </div>
-                   </form>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-image-wrapper">
+                            <img src="assets/experiencia2.jpg" class="d-block w-100" alt="Experiência em educação">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-image-wrapper">
+                            <img src="assets/experiencia5.jpg" class="d-block w-100" alt="Atividades educativas">
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre" class="content-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7 col-md-6 mb-4 mb-md-0">
+                    <h2 class="section-title mb-4">Sobre</h2>
+                    <p class="mb-3">
+                        Nilma Carla dos Santos Pereira, com 24 anos, minha jornada na Educação física começou em 2019, 
+                        impulsionada pela paixão pela capoeira. A dança, o movimento e a rica cultura que envolvem essa 
+                        arte marcial me inspiram a buscar conhecimento e a transformar essa paixão em minha profissão.
+                    </p>
+                    <p>
+                        A educação física se tornou para mim uma ferramenta poderosa para o desenvolvimento pessoal e 
+                        profissional, tanto meu quanto dos meus alunos.
+                    </p>
+                </div>
+                <div class="col-lg-5 col-md-6">
+                    <div class="image-wrapper">
+                        <img src="assets/formatura.jpg" class="img-fluid rounded shadow" alt="Formatura de Nilma Carla">
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Education Section -->
+    <section id="formacao" class="content-section bg-dark-subtle">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 col-md-6 mb-4 mb-md-0">
+                    <div class="image-wrapper">
+                        <img src="assets/formatura-2.jpg" class="img-fluid rounded shadow" alt="Segunda formatura">
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-6">
+                    <h2 class="section-title mb-4">Formação</h2>
+                    <p>
+                        Possuo dupla graduação em Educação Física (Licenciatura e Bacharelado), concluída em 2023 e 2024. 
+                        Com experiência desde 2019, atuo como professora de Capoeira e Ballet. Ao longo da minha trajetória, 
+                        participei de estágios e cursos para aprimorar minhas habilidades e conhecimentos.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Experience Section -->
+    <section id="experiencia" class="content-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title">Experiência</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="experience-card h-100">
+                        <h5 class="mb-3">Professora de Educação Física</h5>
+                        <p class="mb-2">Educandário Novo Ensino</p>
+                        <p class="mb-2">Creche Escola Girassol</p>
+                        <p class="mb-4">Escola Passos Firmes</p>
+                        
+                        <h5 class="mb-3">Professora de Capoeira</h5>
+                        <p class="mb-2">Escola Concept • Escola Luz do Saber</p>
+                        <p class="mb-2">Escola Cantinho do Guri • Escola Interlúdica</p>
+                        <p class="mb-2">Colégio Estilo • Escola Passos Para o Futuro</p>
+                        <p class="mb-2">Escola Raio de Sol • Escola Terra Prometida</p>
+                        <p class="mb-2">Escola 1° Conquista • Colégio Fischer</p>
+                        <p class="mb-2">Escola Proteção à Juventude • Escola Gamaliel</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="experience-card h-100">
+                        <h5 class="mb-3">Professora de Ballet</h5>
+                        <p class="mb-2">Escola Estrela da Manhã</p>
+                        <p class="mb-4">Escola Passos Firmes</p>
+                        
+                        <h5 class="mb-3">Professora Voluntária de Capoeira</h5>
+                        <p class="mb-2">Escola Municipal Professora Elisa Saldanha</p>
+                        <p class="mb-2">Escola Municipal da Fazenda Grande II</p>
+                        <p class="mb-2">Ministro Carlos Santana</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-6 mb-3">
+                    <div class="experience-image">
+                        <img src="assets/experiencia5.jpg" class="img-fluid rounded shadow" alt="Experiência em capoeira">
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <div class="experience-image">
+                        <img src="assets/303b0371-7589-47a4-8a6d-0423a69cd808.jpg" class="img-fluid rounded shadow" alt="Atividades educativas">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Courses Section -->
+    <section id="cursos" class="content-section bg-dark-subtle">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title">Cursos</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="course-card">
+                        <h6 class="course-title">Psicomotricidade</h6>
+                        <p class="course-details">Instituição: Meritorium Escola Digital</p>
+                        <p class="course-hours">Carga horária: 80h</p>
+                    </div>
+                    <div class="course-card">
+                        <h6 class="course-title">Psicomotricidade, jogos e recreação</h6>
+                        <p class="course-details">Instituição: ESAB - 2020</p>
+                        <p class="course-hours">Carga horária: 40h</p>
+                    </div>
+                    <div class="course-card">
+                        <h6 class="course-title">Educação, Aprendizagem e Desenvolvimento</h6>
+                        <p class="course-details">Instituição: ESAB - 2020</p>
+                        <p class="course-hours">Carga horária: 40h</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="course-card">
+                        <h6 class="course-title">Pressupostos Bio-psico-sociais da Educação Infantil</h6>
+                        <p class="course-details">Instituição: ESAB - 2020</p>
+                        <p class="course-hours">Carga horária: 40h</p>
+                    </div>
+                    <div class="course-card">
+                        <h6 class="course-title">Práticas Educativas de Sustentabilidade</h6>
+                        <p class="course-details">Instituição: ESAB - 2020</p>
+                        <p class="course-hours">Carga horária: 40h</p>
+                    </div>
+                    <div class="course-card">
+                        <h6 class="course-title">Atividade Física, Saúde e Câncer</h6>
+                        <p class="course-details">Instituição: UNIME</p>
+                        <p class="course-hours">Carga horária: 5h</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Contact Section -->
+    <section id="contato" class="content-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h2 class="section-title mb-4">Contato</h2>
+                    <p class="lead">Ficou interessado? Entre em contato através das redes sociais ou email.</p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="contact-buttons text-center text-lg-end">
+                        <a href="#" class="btn btn-info btn-lg me-2 mb-2" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin me-2"></i>LinkedIn
+                        </a>
+                        <a href="https://www.instagram.com/nilma.carla/" class="btn btn-danger btn-lg me-2 mb-2" aria-label="Instagram">
+                            <i class="fab fa-instagram me-2"></i>Instagram
+                        </a>
+                        <a href="mailto:" class="btn btn-dark btn-lg me-2 mb-2" aria-label="Email">
+                            <i class="fas fa-envelope me-2"></i>Email
+                        </a>
+                        <a href="#" class="btn btn-success btn-lg mb-2" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp me-2"></i>WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-
-
-
+    <!-- Footer -->
+    <footer class="bg-dark text-center py-4">
+        <div class="container">
+            <p class="mb-0">&copy; 2024 Nilma Carla dos Santos Pereira. Todos os direitos reservados.</p>
+        </div>
+    </footer>
 
     <script src="bootstrap/bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/a3b15a099d.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 </html>
