@@ -8,12 +8,12 @@ header{
 }
 section {
     padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-bottom: 2rem;
 
 }
 h2, h5, p {
     color: white;
-    margin: 30px;
+    margin-bottom: 30px;
 
 }
 
@@ -29,6 +29,9 @@ i {
     margin-right: 2vw;
     margin-left: 2vw;
 }
+section #experiencia {
+	height: 50vh;
+}
 #formacao img {
     
 }
@@ -42,5 +45,60 @@ height: 100vh;
     height: 50%;
 }
 
+.footer {
+	text-align: center;
+    margin-top: 100px;
+}
+.footer ul {
+	padding: 0px;
+	margin: 0px;
+}
+.footer ul li {
+	list-style: none;
+	display: inline-block;
+}
+.footer .logo img {
+	max-width: 100%;
+	margin-top: 60px;
+	margin-bottom: 40px;
+}
+.footer .footer-menu {
+	margin-bottom: 40px;
+}
+.footer .footer-menu ul li {
+	margin: 0px 15px;
+}
+.footer .footer-menu a {
+	font-size: 13px;
+	color: #7a7a7a;
+	text-transform: uppercase;
+	transition: all 0.5s;
+}
+.footer .footer-menu a:hover {
+	color: #3a8bcd;
+	text-decoration: none;
+}
+.footer .social-icons {
+	margin-bottom: 60px;
+}
+.footer .social-icons ul li {
+	margin: 0px 10px;
+}
+.footer .social-icons a {
+	width: 32px;
+	height: 32px;
+	color: #fff;
+	background-color: #aaa;
+	text-align: center;
+    
+	display: inline-block;
+	line-height: 33px;
+	border-radius: 50%;
+	font-size: 13px;
+	transition: all 0.5s;
+}
+.footer .social-icons a:hover {
+	background-color: #3a8bcd;
+}
 
 
