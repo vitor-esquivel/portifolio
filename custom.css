@@ -110,7 +110,7 @@ section {
 
 /* Títulos */
 h1, h2, h3, h4, h5, h6 {
-    color: #2c3e50;
+    color: #6159ac;
     font-weight: 600;
     margin-bottom: 1.5rem;
     line-height: 1.3;
@@ -135,7 +135,7 @@ h2::after {
 
 /* Texto */
 p {
-    color: #5a6c7d;
+    color: #8595a5;
     font-size: 1.1rem;
     line-height: 1.8;
     margin-bottom: 1.5rem;
@@ -267,6 +267,11 @@ img:hover {
     justify-content: center;
     gap: 2rem;
     margin-bottom: 2rem;
+    
+}
+
+.footer li{
+    list-style-type: none;
 }
 
 .footer-menu a {
@@ -285,6 +290,8 @@ img:hover {
     justify-content: center;
     gap: 1rem;
     margin-bottom: 2rem;
+    
+
 }
 
 .social-icons a {
