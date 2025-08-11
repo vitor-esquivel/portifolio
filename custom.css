@@ -313,6 +313,57 @@ img:hover {
     transform: translateY(-3px);
 }
 
+/* Estilos para a seção de contato melhorada */
+.contact-info {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.contact-info p {
+    margin-bottom: 0;
+}
+
+.contact-info a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+.btn-outline-primary {
+    border-color: #3498db;
+    color: #3498db;
+    background: transparent;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+    background: #3498db;
+    color: white;
+    border-color: #3498db;
+}
+
+/* Melhorias nos ícones sociais */
+.social-icons li {
+    margin: 0 0.5rem;
+}
+
+.social-icons a[title="Abrir no Outlook"] {
+    background: linear-gradient(135deg, #0078d4, #106ebe);
+}
+
+.social-icons a[title="Abrir no Outlook"]:hover {
+    background: linear-gradient(135deg, #106ebe, #005a9e);
+    transform: translateY(-3px) scale(1.1);
+}
+
 /* Responsividade */
 @media (max-width: 768px) {
     .container {
