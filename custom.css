@@ -22,10 +22,43 @@ header {
     z-index: 1000;
     border-bottom: 1px solid #e8e8e8;
     transition: all 0.3s ease;
+    padding: 1rem 0;
 }
 
+.logo h4 {
+    color: #2c3e50;
+    font-weight: 600;
+    margin: 0;
+}
+
+/* Botão do menu hambúrguer */
+.navbar-toggler {
+    border: none;
+    background: transparent;
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.navbar-toggler-icon {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    transition: all 0.3s ease;
+}
+
+.navbar-toggler.active .navbar-toggler-icon {
+    color: #3498db;
+    transform: rotate(180deg);
+}
+
+/* Menu desktop */
 #menu {
-    padding: 1rem 0;
+    padding: 0;
 }
 
 #menu ul {
@@ -88,7 +121,7 @@ section {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
     padding: 8rem 0 4rem 0;
-    margin-top: 80px;
+    margin-top: 100px;
 }
 
 .carousel {
@@ -313,55 +346,49 @@ img:hover {
     transform: translateY(-3px);
 }
 
-/* Estilos para a seção de contato melhorada */
-.contact-info {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 2rem;
-    border-radius: 12px;
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+/* Menu mobile retrátil */
+.mobile-menu {
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(15px);
+    border-top: 1px solid #e8e8e8;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
-.contact-info p {
-    margin-bottom: 0;
+.mobile-menu.show {
+    max-height: 300px;
 }
 
-.contact-info a {
-    color: #3498db;
+.mobile-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 1rem 0;
+}
+
+.mobile-menu .nav-item {
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.mobile-menu .nav-item:last-child {
+    border-bottom: none;
+}
+
+.mobile-menu .nav-link {
+    display: block;
+    padding: 1rem 2rem;
+    color: #2c3e50;
     text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.contact-info a:hover {
-    color: #2980b9;
-    text-decoration: underline;
-}
-
-.btn-outline-primary {
-    border-color: #3498db;
-    color: #3498db;
-    background: transparent;
+    font-weight: 500;
     transition: all 0.3s ease;
 }
 
-.btn-outline-primary:hover {
-    background: #3498db;
-    color: white;
-    border-color: #3498db;
-}
-
-/* Melhorias nos ícones sociais */
-.social-icons li {
-    margin: 0 0.5rem;
-}
-
-.social-icons a[title="Abrir no Outlook"] {
-    background: linear-gradient(135deg, #0078d4, #106ebe);
-}
-
-.social-icons a[title="Abrir no Outlook"]:hover {
-    background: linear-gradient(135deg, #106ebe, #005a9e);
-    transform: translateY(-3px) scale(1.1);
+.mobile-menu .nav-link:hover,
+.mobile-menu .nav-link.active {
+    background-color: #f8f9fa;
+    color: #3498db;
+    padding-left: 2.5rem;
 }
 
 /* Responsividade */
@@ -378,9 +405,9 @@ img:hover {
         font-size: 2rem;
     }
     
-    #menu ul {
-        flex-direction: column;
-        gap: 1rem;
+    .hero-section {
+        padding: 6rem 0 3rem 0;
+        margin-top: 120px;
     }
     
     .footer-menu ul {
@@ -395,6 +422,15 @@ img:hover {
     .social-icons a {
         width: 40px;
         height: 40px;
+    }
+    
+    /* Ajustes para o header mobile */
+    header {
+        padding: 0.5rem 0;
+    }
+    
+    .logo h4 {
+        font-size: 1.1rem;
     }
 }
 

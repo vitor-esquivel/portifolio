@@ -14,15 +14,41 @@
     <header>
         <div class="container">
             <div class="row">
-                <div id="menu" class="col col-md-12 col-sm-12">
-                    <ul class="nav justify-content-center"> 
-                        <li class="nav-item"><a class="nav-link active" href="">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#Formacao">Formação</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#Experiencia">Experiência</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#cursos">Cursos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
-                    </ul>
+                <div class="col-12 d-flex justify-content-between align-items-center">
+                    <div class="logo">
+                        <h4 class="mb-0">Nilma Carla</h4>
+                    </div>
+                    
+                    <!-- Botão do menu hambúrguer para mobile -->
+                    <button class="navbar-toggler d-md-none" type="button" id="menuToggle">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    
+                    <!-- Menu desktop -->
+                    <nav id="menu" class="d-none d-md-block">
+                        <ul class="nav"> 
+                            <li class="nav-item"><a class="nav-link active" href="">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#Formacao">Formação</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#Experiencia">Experiência</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#cursos">Cursos</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                
+                <!-- Menu mobile retrátil -->
+                <div class="col-12">
+                    <nav id="mobileMenu" class="mobile-menu d-md-none">
+                        <ul class="nav flex-column"> 
+                            <li class="nav-item"><a class="nav-link active" href="">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#Formacao">Formação</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#Experiencia">Experiência</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#cursos">Cursos</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
         </div>
@@ -214,5 +240,70 @@
 
     <script src="bootstrap/bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/a3b15a099d.js" crossorigin="anonymous"></script>
+    
+    <!-- Script para o menu retrátil -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.getElementById('menuToggle');
+            const mobileMenu = document.getElementById('mobileMenu');
+            const navbarTogglerIcon = document.querySelector('.navbar-toggler-icon');
+            
+            // Toggle do menu mobile
+            menuToggle.addEventListener('click', function() {
+                mobileMenu.classList.toggle('show');
+                
+                // Anima o ícone do hambúrguer
+                if (mobileMenu.classList.contains('show')) {
+                    navbarTogglerIcon.innerHTML = '✕';
+                    menuToggle.classList.add('active');
+                } else {
+                    navbarTogglerIcon.innerHTML = '☰';
+                    menuToggle.classList.remove('active');
+                }
+            });
+            
+            // Fecha o menu quando clicar em um link
+            const mobileLinks = mobileMenu.querySelectorAll('.nav-link');
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    mobileMenu.classList.remove('show');
+                    navbarTogglerIcon.innerHTML = '☰';
+                    menuToggle.classList.remove('active');
+                });
+            });
+            
+            // Fecha o menu quando clicar fora dele
+            document.addEventListener('click', function(event) {
+                if (!menuToggle.contains(event.target) && !mobileMenu.contains(event.target)) {
+                    mobileMenu.classList.remove('show');
+                    navbarTogglerIcon.innerHTML = '☰';
+                    menuToggle.classList.remove('active');
+                }
+            });
+            
+            // Atualiza o menu ativo baseado na seção visível
+            const sections = document.querySelectorAll('section[id]');
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            window.addEventListener('scroll', function() {
+                let current = '';
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.clientHeight;
+                    if (pageYOffset >= sectionTop - 200) {
+                        current = section.getAttribute('id');
+                    }
+                });
+                
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === '#' + current || 
+                        (current === '' && link.getAttribute('href') === '')) {
+                        link.classList.add('active');
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>
